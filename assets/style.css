@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header_div {
+    top: 0;
+    padding: 10px 55px;
+    position: fixed;
+    width: 100vw;
+    height: 30px;
+    z-index: 1;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+.header_div img {
+    height: 30px;
+}
+
+.main_div {
+    margin-top: 50px;
+}
+
+.left_fixed_div {
+    position: fixed;
+    padding: 25px 55px;
+    background: #f8f8f8;
+    width: 27vw;
+    height: 100vh;
+}
+.left_fixed_div h2 {
+    font-size: 22px;
+    color: #1b89f7;
+}
+.left_fixed_div h1 {
+    margin: 15px 0;
+    font-size: 29px;
+}
+.left_fixed_div p {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 15px;
+}
+#data_source {
+    margin: -5px 0 15px 0;
+}
+label {
+    font-weight: bold;
+}
+.dash-dropdown {
+    font-size: 15px;
+}
+.left_fixed_div a {
+    color: #007eff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.left_fixed_div a:hover {
+    color: #49b3ff;
+    text-decoration: underline;
+}
+#theme_dropdown, #question_dropdown, #answer_dropdown, #year_dropdown {
+    margin-left: -1px;
+    padding-bottom: 14px;
+}
+#theme_dropdown, #question_dropdown, #answer_dropdown, #year_dropdown,
+#regions_filter_dropdown, #countries_dropdown, #country_dropdown, 
+#graph_type, #graph_type2, #modalities {
+    padding-top: 5px;
+}
+#theme_dropdown *, #question_dropdown *, #answer_dropdown *, #year_dropdown *,
+#regions_filter_dropdown *, #countries_dropdown *, #country_dropdown *, 
+#graph_type *, #graph_type2 *, #modalities * {
+    cursor: pointer;
+}
+#country_dropdown {
+    width: 400px;
+}
+#answer_gender_proportion_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#countries_dropdown {
+    margin-bottom: 10px;
+}
+
+.right_div {
+    position: relative;
+    margin-left: calc(27vw + 110px);
+    background: #f3f3f3;
+    padding: 20px;
+}
+.right_div>div:first-child {
+    margin-top: 0;
+}
+.right_div>div:last-child {
+    margin-bottom: 0;
+}
+.right_div>div {
+    background: white;
+    margin: 20px 0;
+    padding: 4px 20px;
+}
+.right_div>div>h4 {
+    padding: 14px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.radio_filter_div {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+#country_region_radio, #group_by_radio, #map_res_type_radio, 
+#filter_answer_gender_radio, #res_type, #apriori_group_by {
+    margin: 20px 66px;
+}
+#country_region_radio label, #group_by_radio label, #map_res_type_radio label,
+#filter_answer_gender_radio label, #res_type label, #apriori_group_by label {
+    align-items: center;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 15px;
+}
+#country_region_radio label input, #group_by_radio label input, #map_res_type_radio label input,
+#filter_answer_gender_radio label input, #res_type label input, #apriori_group_by label input {
+    margin: 0 8px;
+    cursor: pointer;
+}
+#filter_answer_gender_radio, #group_by_radio, #res_type, #map_res_type_radio, #apriori_group_by {
+    margin: 5px 0;
+}
+#filter_answer_gender_radio label, #group_by_radio label, #res_type label, 
+#map_res_type_radio label, #apriori_group_by label {
+    padding: 2px 0
+}
+#filter_answer_gender_radio label input, #group_by_radio label input, 
+#res_type label input, #map_res_type_radio label input, #apriori_group_by label input {
+    margin-left: 0
+}
+.radio_filter_div>* {
+    margin: 0 50px;
+}
+
+.countries_dropdowns {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.countries_dropdowns>*:first-child, .apriori_select_div>*:first-child{
+    margin-right: 20px;
+}
+.countries_dropdowns>*:last-child, .apriori_select_div>*:last-child{
+    margin-left: 20px;
+}
+
+.map_radios_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.apriori_select_div {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
